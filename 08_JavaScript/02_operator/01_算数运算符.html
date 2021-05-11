@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            运算符也叫操作符
+                通过运算符可以对一个或多个 值进行运算
+                比如：typeof 就是运算符，可以来获得一个值的类型
+                        它会将该值得类型以字符串的形式返回
+                        number string boolean undefined object
+            
+            算数运算符：
+                当对非Number类型的值进行运算时，会将这些值转换为Number，然后再运算
+                    任何值和 NaN 做运算都得 NaN
+                +
+                    + 可以对两个值进行加法运算，并将结果返回
+                    如果对两个字符串进行加法运算，则会做拼串
+                        会将两个字符串拼接为一个字符串，并返回
+                    任何的值和字符串做加法运算，都会先转换为字符串，然后再和字符串做拼串的操作
+                -
+                    可以对两个值进行减法运算，并将结果返回
+                *
+                    可以对两个值进行乘法运算
+                /
+                    可以对两个值进行除法运算
+                %
+                    可以对两个值进行取模（取余数）运算
+        */
+        /*
+            任何值做 - * / 运算时都会自动转换为Number
+                我们可以利用这一特点做隐式的类型转换
+                    可以通过为一个值 -0 *1 /1 来将其转换为Number
+                    原理和 Number() 函数一样，使用起来更简单
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

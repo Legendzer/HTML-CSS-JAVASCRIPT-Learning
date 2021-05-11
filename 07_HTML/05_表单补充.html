@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="target.html">
+        <!-- 
+            autocomplete="off“ 关闭自动补全
+            readonly 将表单项设置为只读，数据会提交
+            disabled 将表单项设置为禁用，数据不会提交
+            autofocus 设置表单项自动获取焦点，光标在该处显示
+         -->
+        <input type="text" name="username" value="hello">
+        <br><br>
+        <!-- 关闭自动补全 -->
+        <input type="text" name="username" autocomplete="off">
+        <br><br>
+        <input type="text" name="username" readonly>
+
+        <br><br>
+
+        <input type="submit">
+        <input type="reset">
+
+        <!-- 普通按钮 -->
+        <input type="button" value="按钮">
+        <br><br>
+
+    </form>
+</body>
+</html>

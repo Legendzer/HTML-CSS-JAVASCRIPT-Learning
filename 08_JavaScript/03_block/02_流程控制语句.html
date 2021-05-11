@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            流程控制语句
+            - JS中的程序是从上到下一行一行执行的
+            - 通过流程控制语句可以控制程序执行流程，
+                使程序可以根据一定的条件来选择执行
+            - 语句分类：
+                1、条件判断语句
+                2、条件分支语句
+                3、循环语句
+        */
+
+        /*
+            条件判断语句：
+                - 使用条件判断语句可以在执行某个语句之前进行判断。
+                    如果条件成立才会执行语句，条件不成立则语句不执行，
+                - if 语句
+                - 语法一：
+                    if(条件表达式){
+                        语句.....
+                    }                       
+                    if语句在执行时，会先对条件表达式进行求值判断，
+                    如果条件表达式的值为true，则执行if后的语句，
+                    如果条件表达式的值为false，则不会执行if后的语句
+                        if语句只能控制紧随其后的语句，
+                        可以将这些语句统一放到代码块中，
+                    if语句后的代码块不是必须的，但是在开发中尽量写上代码块，即使if仅有一条语句
+                
+                - 语法二：
+                    if(条件表达式){
+                        语句....
+                    }else{
+                        语句....
+                    }
+
+                if...else...语句
+                    当该语句执行时，会先对if后的条件表达式进行求值判断，
+                        如果该值为true，则执行if后语句，
+                        如果该值为false，则执行else后的语句
+                
+
+                - 语法三：
+                    if(条件表达式){
+                        语句...
+                    }else if(条件表达式){
+                        语句...
+                    }else if(条件表达式){
+                        语句...
+                    }else{
+                        语句...
+                    }
+        */
+
+
+
+        // alert("hello");
+        // console.log("你好");
+
+
+        /*
+            prompt()可以弹出一个提示框，该提示框中会带有一个文本框，
+              用户可以在文本框中输入一段内容，该函数需要一个字符串作为参数，
+              该字符串将会作为提示框的提示文字
+
+            用户输入的内容将会作为函数的值返回，可以定义一个变量来接收该内容
+        */
+
+        //test1
+        // var a = prompt("请输入小明的期末成绩：");
+
+        // if(a == 100){
+        //     alert("奖励一辆BMW");
+        // }else if(a >= 80){
+        //     alert("奖励一台iphone15s");
+        // }else if(a >= 60){
+        //     alert("奖励一本参考书");
+        // }else{
+        //     alert("什么都没有");
+        // }
+
+        //test2
+        // var a = prompt("请输入身高：");
+        // var b = prompt("请输入财富：");
+        // var c = prompt("请输入颜值：");
+
+        // if(a > 180 && b > 1000 && c > 500){
+        //     alert("我一定要嫁给他");
+        // }else if(a < 180 && b < 1000 && c < 500){
+        //     alert("不嫁！");
+        // }else{
+        //     alert("嫁吧，比上不足，比下有余。");
+        // }
+
+        //test3
+        var a = +prompt("请输入数字1：");
+        var b = +prompt("请输入数字2：");
+        var c = +prompt("请输入数字3：");
+
+        if(a > b && a > c){
+            if(b > c){
+                alert(c + "," + b + "," + a);
+            }else{
+                alert(b + "," + c + "," + a);
+            }
+        }else if(b > a && b > c){
+            if(a > c){
+                alert(c + "," + a + "," + b);
+            }else{
+                alert(a + "," + c + "," + b);
+            }
+        }else{
+            if(a > b){
+                alert(b + "," + a + "," + c);
+            }else{
+                alert(a + "," + b + "," + c);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

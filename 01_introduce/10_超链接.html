@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        target属性，用来指定超链接打开的位置
+            可选值：
+                _self 默认值 在当前页面中刚打开超链接
+                _blank 在一个新的页面中打开超链接
+    -->
+    
+    <a href="./07_列表.html" target="_blank">超链接</a>
+
+    <!--
+
+    -->
+    <a href="#bottom">去底部</a>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident cupiditate quas officiis, excepturi nulla cumque in dignissimos amet minus ipsa error ipsam commodi incidunt ipsum dolores temporibus odit deleniti.</p>
+    <!--
+        可以直接将超链接的href属性设置为#，这样点击超链接后页面就不会发生跳转，
+        而是跳转到当前页面的顶部的位置
+
+        可以跳转到页面的指定位置，只要将href属性设置 #目标元素的id属性值
+
+        id属性（唯一不重复）
+            - 每一个标签都可以添加一个id属性
+            - id属性就是元素的唯一标示，同一个页面中不能出现重复的id属性
+    -->
+    <a id = "bottom" href="#">回到顶部</a>
+
+
+</body>
+</html>

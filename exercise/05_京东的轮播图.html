@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* 设置图片的容器 */
+        .img-list{
+            width: 500px;
+            height: 470px;
+            margin: 100px auto;
+        }
+
+        /* 设置li */
+        .img-list li{
+            position: absolute;
+        }
+
+        /* 通过修改元素的层级来显示指定的图片 */
+        .img-list li:nth-child(){
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="javascript:;"><img src="./img/1.jpg" alt=""></a></li>
+    </ul>
+</body>
+</html>

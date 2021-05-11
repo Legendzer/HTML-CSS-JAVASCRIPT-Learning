@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易的新闻列表</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            background-color: #bfa;
+        }
+        .news-wrapper{
+            width: 300px;
+            height: 358px;
+
+            margin: 50px auto;
+            background-color: #fff;
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+        }
+
+        /* 设置news-title */
+        .news-title{
+            /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+            display: inline-block;
+            /* 设置宽度 */
+            height: 30px;
+            /* 设置上边框 */
+            border-top: 1px solid red;
+            /* 通过margin-top 将h2上移，盖住上边框 */
+            margin-top: -1px;
+
+            padding-top: 10px;
+        }
+
+        /* 设置title中超链接的样式 */
+        .news-title a{
+            /* 设置颜色 */
+            color: #404068;
+            /* 设置文字的加粗效果 */
+            font-weight: bold;
+        }
+        /* 设置图片容器的高度 */
+        .news-img{
+            height: 190px;
+        }
+
+        /* 设置图片的文字效果 */
+        .news-img .img-title{
+            color: #fff;
+            margin: -20px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        /* 设置新闻列表 */
+        .news-list{
+            margin-top: 20px;
+            padding-left: 16px;
+        }
+
+        /* 设置li */
+        .news-list li{
+            margin-bottom: 10px;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666;
+        }
+
+        .news-list li::before{
+            content: '■';
+            color: rgb(189, 189, 189);
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        .news-list li a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 创建新闻列表的外侧的容器 -->
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+            <a href="a">体育</a>
+        </h2>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news-img">
+            <a href="#">
+                <img src="./img/1.jpg" alt="费德勒" width="300px" height="180px">
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">
+                    费德勒首负迪米 扶额摇头不满发挥
+                </h3>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="#">东海岛孵化基地</a>
+            </li>
+            <li>
+                <a href="#">饶有趣味储奶袋</a>
+            </li>
+            <li>
+                <a href="#">场地费你画我猜</a>
+            </li>
+            <li>
+                <a href="#">村附近会呈现出</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

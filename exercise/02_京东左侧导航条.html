@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东的左侧导航</title>
+    <style>
+        /* 设置body */
+        body {
+            /* 设置一个网页背景，以便我们查看 */
+            background-color: #bfa;
+        }
+
+        /* 设置菜单外部容器 */
+        .left-nav {
+            /* 设置宽度 */
+            width: 190px;
+            /* 设置高度 */
+            height: 450px;
+            /* 设置padding */
+            padding: 10px 0;
+            /* 设置一个背景颜色 */
+            background-color: white;
+
+            margin: 50px auto;
+        }
+        .left-nav .item{
+            height: 25px;
+            /* 要让我一个文件在父元素中垂直居中，只需要将父元素的line_height设置为一个和父元素 */
+            line-height: 25px;
+            /* 设置item的右内边距，将文字向内移动 */
+            padding-left: 18px;
+        }
+
+        /* 为item设置一个鼠标移入的状态 */
+        .item:hover{
+            background-color: #d9d9d9;
+        }
+
+        /* 设置超链接的样式 */
+        .item a{
+            /* 设置字体大小 */
+            font-size: 14px;
+            /* 设置字体的颜色 */
+            color: #333;
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+
+        /* 设置超链接的hover的样式 */
+        .item a:hover{
+            color: #c81623;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个外部的容器 nav(div) div(div) ul(li) -->
+    <nav class="left-nav">
+        <div class="item">
+            <div>
+                <a href="a">家用电器</a>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <a href="a">手机</a>
+                <a href="a">运营商</a>
+                <a href="a">数码</a>
+            </div></div>
+            <div class="item">
+                <div>
+                <a href="a">电脑</a>
+                <a href="a">办公</a>
+            </div>
+            </div>
+            <div class="item">
+                <div>
+                <a href="a">家居</a>
+                <a href="a">家具</a>
+                <a href="a">家装</a>
+                <a href="a">厨具</a>
+            </div>
+            </div>
+            <div class="item">
+                <div>
+                <a href="a">男装</a>
+                <a href="a">女装</a>
+                <a href="a">童装</a>
+                <a href="a">内衣</a>
+            </div>
+            </div>
+    </nav>
+</body>
+
+</html>

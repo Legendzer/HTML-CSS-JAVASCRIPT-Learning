@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 
+                长度单位：
+                    像素
+                    百分比：可以将属性值设置为相对于父元素属性的百分比
+                    em：相对于字体大小来计算的，1em = 1 font_size，
+                        em会根据字体大小的改变而改变
+                    rem：相对于根元素的字体大小来计算
+             */
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: aqua;
+        }
+
+        .box3{
+            width: 10em;
+            height: 10em;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+</body>
+</html>
