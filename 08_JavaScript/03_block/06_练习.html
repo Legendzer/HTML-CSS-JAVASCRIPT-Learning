@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
+    <script>
+        /*
+            在页面中接收一个用户输入的数字，并判断该数是否是质数
+                质数：只能被1和它本身整除的数，1不是质数也不是合数，质数必须是大于1的自然数
+        */
+    //    var num = prompt("请输入一个大于1的整数：");
+    //    alert(num);
+    //    flag = true;
+    //    for(var i = 2; i < num; i++){
+    //        if( num % i != 0){
+    //            flag = false;
+    //        }
+    //    }
+    //    if(flag){
+    //        alert(num + "是一个质数");
+    //    }else{
+    //        alert(num + "不是一个质数");
+    //    }
+
+       /*
+            打印99乘法表
+            1*1 = 1
+            1*2 = 2 2*2 = 4
+            1*3 = 3 2*3 = 6 3*3 = 9
+            1*4 = 4 2*4 = 8 3*4 = 12 4*4 = 16
+            ........
+       */
+        for(var i = 1; i <= 9; i++){
+            for(var j = 1; j <= i; j++){
+                document.write(j + "*" + i + "=" + i * j + "&nbsp;");
+            }
+            // 输出一个换行
+            document.write("<br />");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
