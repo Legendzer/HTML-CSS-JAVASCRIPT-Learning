@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var obj = new Object();
+        /*
+            向对象中添加属性
+            属性名：
+                - 对象的属性名不强制要求遵守标识符的规范
+                    什么乱七八糟的名字都可以使用
+                - 但是我们使用还是尽量按照标识符的规范去做
+        */
+        obj.name = "孙悟空";
+        // obj.var = "hello";
+
+        /*
+            如果要使用特殊的属性名，不能采用 . 的方式来操作
+              需要使用另一种方式：
+                  语法：对象["属性名"] = 属性值
+              读取时也需要采用这种方式
+            
+            使用[]这种形式去操作属性，更加灵活，
+              在[]中可以直接传递一个变量，这样变量值时多少就会去读取那个属性
+        */
+        obj["123"] = 789;
+        console.log(obj["123"])
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
