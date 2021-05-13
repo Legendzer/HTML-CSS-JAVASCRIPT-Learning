@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var obj = new Object();
+        // var obj = new Object();
         /*
             向对象中添加属性
             属性名：
@@ -14,7 +14,7 @@
                     什么乱七八糟的名字都可以使用
                 - 但是我们使用还是尽量按照标识符的规范去做
         */
-        obj.name = "孙悟空";
+        // obj.name = "孙悟空";
         // obj.var = "hello";
 
         /*
@@ -26,8 +26,36 @@
             使用[]这种形式去操作属性，更加灵活，
               在[]中可以直接传递一个变量，这样变量值时多少就会去读取那个属性
         */
-        obj["123"] = 789;
-        console.log(obj["123"])
+        // obj["123"] = 789;
+        // console.log(obj["123"]);
+
+        /*
+            属性值
+              JS对象的属性值，可以是任意的数据类型
+                甚至也可以是一个对象
+        */
+
+        var obj = new Object();
+        obj.test = true;
+
+        //创建一个对象
+        var obj2 = new Object();
+        obj2.test = "猪八戒";
+
+        //将obj2设置为obj的属性
+        obj.test = obj2;
+        console.log(obj.test);
+
+        /*
+            in 运算符
+              - 通过该运算符可以检查一个对象中是否含有制定的属性
+                如果有则返回true，没有则返回false
+              - 语法：
+                “属性名” in 对象
+        */
+
+        //检查obj中是否含有test2属性
+        //console.log("test2" in obj);
 
     </script>
 </head>

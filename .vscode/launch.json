@@ -1,0 +1,20 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "使用本机 Chrome 调试",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/04_对象字面量.html?debug=1",
+            "runtimeExecutable": "C:/Users/Lenovo/AppData/Local/Google/Chrome/Application/chrome.exe",
+            "runtimeArgs": ["--allow-file-access-from-files","--autoplay-policy=0"],
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            "userDataDir":"${tmpdir}",
+            "port":5433
+        }
+    ]
+}
