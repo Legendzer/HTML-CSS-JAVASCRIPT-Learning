@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            作用域
+                - 作用域指一个变量的作用的范围
+                - 在JS中一共有两种作用域
+                    1、全局作用域
+                        - 直接编写在script标签中的JS代码，都在全局作用域
+                        - 全局作用域在页面打开时创建，在页面关闭时销毁
+                        - 在全局作用域中，有一个全局对象window，我们可以直接使用，代表浏览器的一个窗口，由浏览器创建
+                        - 在全局作用域中，
+                            创建的变量都会作为window对象的属性保存
+                            创建的函数都会作为window对象的方法保存
+                        - 全局作用域中的变量都是全局变量，
+                            在页面的任意部分都可以访问得到
+                    2、函数作用域
+        */
+       function fun(){
+           var a = 123;
+       }
+
+       fun();
+
+       /*
+            变量的声明提前
+                - 使用var关键字声明的变量，会在所有的代码执行之前被声明（但是不会赋值），
+                    但是如果声明变量时不使用var关键字，则变量不会被声明提前
+            
+            函数的声明提前
+                - 使用函数声明形式创建的函数function 函数(){}
+                    它会在所有的代码执行之前就被创建，所以我们可以在函数声明前调用
+                使用函数表达式创建的函数，不会被声明提前，所以不能再声明前调用
+       */
+
+       fun();
+       fun2();
+
+       //使用函数声明形式创建，会被提前创建
+       function fun(){
+           console.log("我是一个fun函数");
+       }
+
+       //使用函数表达式创建，不会被提前创建
+       var fun2 = function(){
+           console.log("我是fun2函数");
+       };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
