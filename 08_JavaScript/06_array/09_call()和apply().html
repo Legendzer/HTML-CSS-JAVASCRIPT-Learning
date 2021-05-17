@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(a,b){
+            alert("我是fun函数");
+        }
+
+        /*
+            call()和apply()
+                - 这两个方法都是函数对象的方法，需要通过函数对象来调用
+                - 当对函数调用call()和apply()都会调用函数执行
+                - 在调用call()和apply()可以将第一个对象指定为第一个参数
+                    此时这个对象将会成为函数执行时的this
+                - call()方法可以将实参在对象之后一次传递
+                    fun.call(obj,2,3);
+                - apply()方法需要将实参封装到一个数组中统一传递
+                    fun.apply(obj,[2,3]);
+                
+
+        */
+
+        fun.call();
+        fun.apply();
+        fun();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
